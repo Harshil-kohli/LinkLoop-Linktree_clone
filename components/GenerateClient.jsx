@@ -1,3 +1,4 @@
+// components/GenerateClient.jsx
 "use client";
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,7 +11,6 @@ export default function GenerateClient() {
   const [desc, setdesc] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Use browser URL parsing (works anywhere and doesn't rely on next/navigation)
   useEffect(() => {
     try {
       const params = new URLSearchParams(window.location.search);
